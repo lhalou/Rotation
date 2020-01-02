@@ -1,0 +1,71 @@
+html,body,ul,li,p {
+    padding: 0;
+    margin: 0;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.carousel {
+    position: relative;
+    width: 320px;
+    height:180px;
+    overflow: hidden;
+}
+.carousel .img-ct{
+    position: absolute;
+    overflow: hidden;
+}
+.carousel .img-ct>li {
+    float: left;
+}
+.carousel .img-ct img {
+    width: 320px;
+    height: 180px;
+}
+.carousel .arrow {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.carousel .arrow:hover {
+    background: grey;
+    opacity: 0.8;
+    border-color: grey;
+}
+.carousel .pre {
+    left: 10px;
+}
+.carousel .next {
+    right: 10px;
+}
+.carousel .bullet {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+}
+.carousel .bullet>li {
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 0 3px;
+}
+.carousel .bullet>li.active {
+    background: #ccc;
+}
